@@ -1,0 +1,31 @@
+.needs :hover{
+    cursor: pointer;
+}
+
+.needs :hover + .light{
+    visibility: visible;
+}
+
+.needs :hover + .water{
+    visibility: visible;
+}
+
+.info-bulle{
+    position: absolute;
+    background-color: #31b572;
+    padding: 15px;
+    text-transform: lowercase;
+    border-radius: 50% 50% 50% 0px;
+    visibility: hidden;
+    left: 100px;
+    color: white;
+    font-weight: lighter;
+}
+
+.light{
+    top:350px;
+}
+
+.water{
+    top:300px;
+}

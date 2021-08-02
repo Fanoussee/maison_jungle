@@ -1,0 +1,9 @@
+.title-recommendation {
+    font-style: italic;
+    color: white;
+    background-color: #31b572;
+    width: 25%;
+    border-radius: 50% 25px;
+    padding: 12px 0px 14px 0px;
+    font-weight: bold;
+}
