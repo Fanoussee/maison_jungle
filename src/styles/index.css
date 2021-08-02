@@ -17,3 +17,7 @@ code {
   flex-direction: row;
   justify-content: stretch;
 }
+
+.btn-box  :hover{
+  cursor: pointer;
+}

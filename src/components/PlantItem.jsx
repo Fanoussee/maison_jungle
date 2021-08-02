@@ -2,14 +2,13 @@ import CareScale from "./CareScale";
 import "../styles/plantItem.css";
 
 function PlantItem({ plante, cart, updateCart }) {
-
   function Soldes() {
     if (plante.isSpecialOffer) {
       return <div className="lmj-sales">Soldes</div>;
     }
   }
 
-  function addToCart(name, price){
+  function addToCart(name, price) {
     // on vérifie si la plante est déjà dans le panier
     const currentPlantAdded = cart.find((plant) => plant.name === name);
     if (currentPlantAdded) {
@@ -20,16 +19,16 @@ function PlantItem({ plante, cart, updateCart }) {
       // pour pouvoir la rajouter ensuite et mettre à jour la quantité
       updateCart([
         ...cartFilteredCurrentPlant,
-        { name, price, amount : currentPlantAdded.amount + 1 }
+        { name, price, amount: currentPlantAdded.amount + 1 },
       ]);
-    }else{
+    } else {
       updateCart([
         ...cart,
         {
           name,
           price,
-          amount: 1
-        }
+          amount: 1,
+        },
       ]);
     }
   }
@@ -50,8 +49,15 @@ function PlantItem({ plante, cart, updateCart }) {
           <CareScale careType="light" scaleValue={plante.light} />
         </div>
         {Soldes()}
-        <div className="plant-price">{ plante.price }€</div>
-        <button className="btn-add-plant" onClick={() => addToCart(plante.name, plante.price)}>Ajouter</button>
+        <div className="plant-price">{plante.price}€</div>
+        <div className="btn-box">
+          <button
+            className="btn-add-plant"
+            onClick={() => addToCart(plante.name, plante.price)}
+          >
+            Ajouter
+          </button>
+        </div>
       </li>
     </ul>
   );

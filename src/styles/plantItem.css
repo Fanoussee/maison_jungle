@@ -39,23 +39,24 @@
     padding: 10px 10px 0px 10px;
 }
 
-.btn-add-plant{
+.btn-add-plant {
     border-radius: 0px 0px 20px 20px;
     border: 1px solid #31b572;
     background-color: #31b572;
     height: 50px;
+    width: 100%;
     margin-bottom: 0px;
     color: white;
     font-weight: bold;
     font-size: 1.4rem;
 }
 
-.needs{
+.needs {
     height: 30px;
     padding-bottom: 10px;
 }
 
-.plant-price{
+.plant-price {
     position: absolute;
     right: 5px;
     top: 5px;
