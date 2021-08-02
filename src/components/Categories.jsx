@@ -9,7 +9,7 @@ function Categories({ setActiveCategory, categories, activeCategory }) {
         onChange={(e) => setActiveCategory(e.target.value)}
         className="lmj-categories-select"
       >
-        <option value="toutes">toutes</option>
+        <option value="toutes">Toutes</option>
         {categories.map((categorie) => (
           <option key={`${categorie}`} value={categorie}>
             {categorie}

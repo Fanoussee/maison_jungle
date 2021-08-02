@@ -21,3 +21,14 @@ code {
 .btn-box  :hover{
   cursor: pointer;
 }
+
+.info-bulle{
+  position: absolute;
+  background-color: #31b572;
+  padding: 15px;
+  border-radius: 50% 50% 50% 0px;
+  visibility: hidden;
+  color: white;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}

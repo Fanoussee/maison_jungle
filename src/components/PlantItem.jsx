@@ -42,7 +42,15 @@ function PlantItem({ plante, cart, updateCart }) {
           alt={`${plante.name} cover`}
         />
         <div className="plant-name">
-          {plante.name} {plante.isBestSale && <span>🔥</span>}
+          {plante.name}
+          {plante.isBestSale && (
+            <div className="fire-best-sale">
+              <span>🔥</span>
+              <span className="fire-best-sale info-bulle best-sale">
+                Meilleure vente !
+              </span>
+            </div>
+          )}
         </div>
         <div className="plant-specifications">
           <CareScale careType="water" scaleValue={plante.water} />

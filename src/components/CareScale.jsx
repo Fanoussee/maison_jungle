@@ -1,6 +1,6 @@
 import Sun from "../assets/sun.svg";
 import Water from "../assets/water.svg";
-import '../styles/careScale.css';
+import "../styles/careScale.css";
 
 function CareScale({ scaleValue, careType }) {
   const range = [1, 2, 3];
@@ -13,10 +13,10 @@ function CareScale({ scaleValue, careType }) {
 
   return (
     <div className="needs">
-      <div className="needs">
+      <div>
         {range.map((rangeElement) =>
           scaleValue >= rangeElement ? (
-            <span key={rangeElement.toString() } /*onClick={() => alertCareScale(scaleValue, careType) }*/>{scaleType}</span>
+            <span key={rangeElement.toString()}>{scaleType}</span>
           ) : null
         )}
       </div>
@@ -25,11 +25,24 @@ function CareScale({ scaleValue, careType }) {
   );
 }
 
-function infoCareScale(scaleValue, careType){
-  const degres = ["peu", `modéré${careType === "light" ? 'e' : ''}`, "beaucoup"];
-  const type = careType === 'light' ? 'lumière' : 'arrosage';
-  return <span className={careType === "light" ? "needs info-bulle light" : "needs info-bulle water"}>
-    {type} : {degres[scaleValue-1]} </span>
+function infoCareScale(scaleValue, careType) {
+  const degres = [
+    "peu",
+    `modéré${careType === "light" ? "e" : ""}`,
+    "beaucoup",
+  ];
+  const type = careType === "light" ? "Lumière" : "Arrosage";
+  return (
+    <span
+      className={
+        careType === "light"
+          ? "needs info-bulle light"
+          : "needs info-bulle water"
+      }
+    >
+      {type} : {degres[scaleValue - 1]}{" "}
+    </span>
+  );
 }
 
 export default CareScale;

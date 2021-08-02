@@ -13,14 +13,17 @@
     justify-content: space-between;
     flex-direction: column;
     position: relative;
-    text-transform: capitalize;
     font-weight: bold;
 }
 
 .plant-name {
     text-align: center;
-    padding-top: 10px;
+    padding: 10px 0px 0px 0px;
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .lmj-sales {
@@ -33,6 +36,20 @@
     padding: 5px 10px;
     background-color: #31b572;
     border-radius: 20px 0px 10px 0px;
+}
+
+.fire-best-sale :hover{
+    cursor: pointer;
+}
+
+.fire-best-sale :hover + .best-sale {
+    visibility: visible;
+}
+
+.best-sale {
+    top: 270px;
+    left: 250px;
+    right: -60px;
 }
 
 .plant-specifications {
@@ -49,11 +66,6 @@
     color: white;
     font-weight: bold;
     font-size: 1.4rem;
-}
-
-.needs {
-    height: 30px;
-    padding-bottom: 10px;
 }
 
 .plant-price {

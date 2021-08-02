@@ -1,3 +1,8 @@
+.needs {
+    height: 30px;
+    padding-bottom: 10px;
+}
+
 .needs :hover{
     cursor: pointer;
 }
@@ -10,22 +15,12 @@
     visibility: visible;
 }
 
-.info-bulle{
-    position: absolute;
-    background-color: #31b572;
-    padding: 15px;
-    text-transform: lowercase;
-    border-radius: 50% 50% 50% 0px;
-    visibility: hidden;
-    left: 100px;
-    color: white;
-    font-weight: lighter;
-}
-
 .light{
     top:350px;
+    left: 100px;
 }
 
 .water{
     top:300px;
+    left: 100px;
 }
