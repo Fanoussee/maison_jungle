@@ -1,5 +1,5 @@
 .lmj-footer {
-	color: black;
+	color: white;
 	padding: 32px;
 	border-top: solid 3px black;
 	display: flex;
@@ -7,6 +7,9 @@
 	flex-direction: column;
 	align-items: center;
 	font-weight: 500;
+	background-image: 
+        linear-gradient(#31b572, #123d2888),
+        url("../assets/51865-philodendron-monstera-3.jpeg");
 }
 
 .lmj-footer-elem {
